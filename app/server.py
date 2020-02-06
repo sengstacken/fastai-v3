@@ -173,9 +173,9 @@ async def homepage(request):
     html_file = path / 'view' / 'index.html'
     return HTMLResponse(html_file.open().read())
 
-
 @app.route('/analyze', methods=['POST'])
 async def analyze(request):
+    print(request)
     img_data = await request.form()
     img_bytes = await (img_data['file'].read())
     img = open_image(BytesIO(img_bytes))
