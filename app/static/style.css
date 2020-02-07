@@ -5,6 +5,7 @@ body {
 .no-display {
     display: none;
 }
+
 .center {
     margin: auto;
     padding: 10px;
@@ -22,7 +23,7 @@ body {
 }
 
 .content {
-    margin-top: 10em;
+    margin-top: 2em;
 }
 
 .analyze {
@@ -60,6 +61,4 @@ button.analyze-button {
     color: #ffffff;
 }
 
-button:focus {
-    outline: 0;
-}
+button:focus {outline:0;}
